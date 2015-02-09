@@ -149,6 +149,7 @@ return [
 		 * Third-Party Service Providers...
 		 */
 		'Barryvdh\Debugbar\ServiceProvider',
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 
 	],
 
