@@ -1,5 +1,7 @@
 var elixir = require('laravel-elixir');
 
+require('laravel-elixir-browser-sync');
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -13,5 +15,12 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.copy('resources/assets/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/bootstrap')
-    	.sass('main.scss');
+    	.sass('main.scss')
+    	.browserSync([
+			'app/**/*',
+			'public/**/*',
+			'resources/views/**/*'
+    	], {
+    		proxy: 'sicna.app'
+    	});
 });

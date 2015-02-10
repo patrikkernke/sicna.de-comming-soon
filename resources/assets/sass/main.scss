@@ -1,9 +1,19 @@
 
 // dependecies
-@import '../bootstrap-sass/assets/stylesheets/bootstrap';
+@import "../bootstrap-sass/assets/stylesheets/bootstrap";
+
+* {
+	box-sizing: border-box;
+}
+
+// custom mixins
+@import "mixins/declare-font-face";
 
 // base-stylings
-@import 'vars/colors';
+@import "fonts/all";
+@import "vars/colors";
+@import "vars/fonts";
+
 
 // app-stylings
-@import 'pages/coming-soon';
+@import "pages/coming-soon";
