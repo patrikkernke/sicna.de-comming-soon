@@ -14,12 +14,21 @@ require('laravel-elixir-browser-sync');
  */
 
 elixir(function(mix) {
-    mix.copy('resources/assets/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/bootstrap')
+    mix.copy(
+	    	'resources/assets/bootstrap-sass/assets/fonts/bootstrap', 
+	    	'public/fonts/bootstrap'
+    	)
+    	.scripts([
+    		'coming.js'
+            ],
+    		'public/js/coming.js',
+            'resources/assets/js' 
+    	)
     	.sass('main.scss')
     	.browserSync([
 			'app/**/*',
 			'public/**/*',
-			'resources/views/**/*'
+			'resources/views/**/*',
     	], {
     		proxy: 'sicna.app'
     	});

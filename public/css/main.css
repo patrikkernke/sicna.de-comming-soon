@@ -4961,7 +4961,11 @@ footer {
   position: fixed;
   top: 0;
   width: 100%;
-  height: auto; }
+  max-height: 10px;
+  overflow: hidden;
+  transition: max-height 1s ease-out; }
+  .overlay-wrapper.open {
+    max-height: 2000px; }
   .overlay-wrapper .container {
     padding-bottom: 50px;
     background-color: #5f5f5f; }
@@ -4979,15 +4983,18 @@ footer {
     font-weight: normal; }
     .overlay-wrapper a.contact.bigger {
       font-size: 20px; }
-  .overlay-wrapper .glyphicon {
-    padding-top: 22px;
-    width: 80px;
-    height: 80px;
-    color: #de0011;
-    font-size: 35px;
-    border-radius: 50px;
-    background-color: white; }
+  .overlay-wrapper .contact-data {
+    margin: 40px 0; }
+    .overlay-wrapper .contact-data .glyphicon {
+      padding-top: 22px;
+      width: 80px;
+      height: 80px;
+      color: #de0011;
+      font-size: 35px;
+      border-radius: 50px;
+      background-color: white; }
   .overlay-wrapper a.btn {
+    width: 100%;
     color: white;
     background-color: transparent; }
     .overlay-wrapper a.btn:hover {

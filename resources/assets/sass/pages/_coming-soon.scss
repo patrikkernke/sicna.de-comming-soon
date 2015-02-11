@@ -160,7 +160,13 @@ footer {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: auto;
+	max-height: 10px;
+
+	&.open { max-height: 2000px; }
+
+	overflow: hidden;
+	
+	transition: max-height 1s ease-out;
 
 	.container {
 		padding-bottom: 50px;
@@ -188,20 +194,28 @@ footer {
 		}
 	}
 
-	.glyphicon {
-		padding-top: 22px;
+	.contact-data {
+		
+		margin: 40px 0;
 
-		width: 80px;
-		height: 80px;
+		.glyphicon {
+			padding-top: 22px;
 
-		color: $clPrimary;
-		font-size: 35px;
+			width: 80px;
+			height: 80px;
 
-		border-radius: 50px;
-		background-color: $clPaper;
+			color: $clPrimary;
+			font-size: 35px;
+
+			border-radius: 50px;
+			background-color: $clPaper;
+		}
+
 	}
 
 	a.btn {
+		width: 100%;
+
 		color: $clPaper;
 		background-color: transparent;
 

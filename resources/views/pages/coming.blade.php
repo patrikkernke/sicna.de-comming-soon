@@ -27,7 +27,7 @@
 					<li>Digitaldruck</li>
 				</ul>
 
-				<a href="#" class="btn btn-default">Kontakt aufnehmen</a>
+				<a href="#" id="contactOpenBtn" class="btn btn-default">Kontakt aufnehmen</a>
 				
 			</div>		
 
@@ -56,7 +56,7 @@
 		</div>
 	</footer>
 
-	<div class="overlay-wrapper">
+	<div id="overlayContact" class="overlay-wrapper open">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -68,23 +68,27 @@
 					<h2>Wir helfen Ihnen gerne weiter!</h2>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4 text-center">
+			<div class="contact-data row">
+				
+				<div class="col-md-4 col-sm-4 col-xs-12 text-center">
 					<span class="glyphicon glyphicon-envelope"></span>
 					<a href="#" class="contact bigger">info@sicna.de</a>
 				</div>
-				<div class="col-md-4 text-center">
+				
+				<div class="col-md-4 col-sm-4 col-xs-12 text-center">
 					<span class="glyphicon glyphicon-phone"></span>
 					<a href="#" class="contact bigger">0261 / 84088</a>
 				</div>
-				<div class="col-md-4 text-center">		
+				
+				<div class="col-md-4 col-sm-4 col-xs-12 text-center">		
 					<span class="glyphicon glyphicon-flag"></span>
 					<a href="#" class="contact">Rudolf-Diesel-Str. 8, <br> 56220 Urmitz bei Koblenz</a>
 				</div>
+
 			</div>
 			<div class="row">
-				<div class="col-md-12 text-center">
-					<a href="#" class="btn btn-default">
+				<div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3 text-center">
+					<a id="contactHideBtn" href="#" class="btn btn-default">
 						<span class="glyphicon glyphicon-chevron-up"></span>
 						Zurück
 					</a>
