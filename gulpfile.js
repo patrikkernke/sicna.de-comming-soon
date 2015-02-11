@@ -15,12 +15,16 @@ require('laravel-elixir-browser-sync');
 
 elixir(function(mix) {
     mix.copy(
-	    	'resources/assets/bootstrap-sass/assets/fonts/bootstrap', 
+	    	'resources/assets/bower_components/bootstrap-sass/assets/fonts/bootstrap', 
 	    	'public/fonts/bootstrap'
-    	).
-        copy(
-            'resources/assets/animate.css/animate.css',
+    	)
+        .copy(
+            'resources/assets/bower_components/animate.css/animate.css',
             'public/css/animate.css'
+        )
+        .copy(
+            'resources/assets/bower_components/jquery/dist/jquery.js',
+            'public/js/jquery.js'
         )
     	.scripts([
     		'coming.js'

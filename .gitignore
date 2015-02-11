@@ -5,5 +5,8 @@ composer.lock
 
 _ide_helper*
 
+resources/assets/bower_components/*
+
 public/css/*
 public/js/*
+public/fonts/bootstrap/*
