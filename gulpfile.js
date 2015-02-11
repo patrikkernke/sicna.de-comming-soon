@@ -17,7 +17,11 @@ elixir(function(mix) {
     mix.copy(
 	    	'resources/assets/bootstrap-sass/assets/fonts/bootstrap', 
 	    	'public/fonts/bootstrap'
-    	)
+    	).
+        copy(
+            'resources/assets/animate.css/animate.css',
+            'public/css/animate.css'
+        )
     	.scripts([
     		'coming.js'
             ],
@@ -25,6 +29,13 @@ elixir(function(mix) {
             'resources/assets/js' 
     	)
     	.sass('main.scss')
+        .styles([
+            'animate.css',
+            'main.css'
+        ],
+            'public/css/all.css',
+            'public/css'
+        )
     	.browserSync([
 			'app/**/*',
 			'public/**/*',

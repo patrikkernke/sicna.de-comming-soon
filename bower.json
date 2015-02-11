@@ -1,0 +1,22 @@
+{
+  "name": "sicna.de",
+  "version": "0.0.0",
+  "homepage": "www.sicna.de",
+  "authors": [
+    "Patrick Kernke <patrick@kernke.net>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.2.0",
+    "bootstrap-sass": "~3.3.3"
+  }
+}

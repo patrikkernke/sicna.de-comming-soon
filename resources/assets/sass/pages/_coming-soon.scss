@@ -162,11 +162,11 @@ footer {
 	width: 100%;
 	max-height: 10px;
 
-	&.open { max-height: 2000px; }
+	&.open { max-height: 1600px; }
 
 	overflow: hidden;
 	
-	transition: max-height 1s ease-out;
+	transition: max-height 1.5s ease;
 
 	.container {
 		padding-bottom: 50px;
