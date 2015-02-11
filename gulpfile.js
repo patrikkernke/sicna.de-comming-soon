@@ -1,5 +1,20 @@
-var gulp = require('gulp');
 var elixir = require('laravel-elixir');
+require('laravel-elixir-browser-sync');
+// var gulp = require('gulp');
+// var util = require('gulp-util');
+
+// gulp.task('default', function() {
+//     util.log(gulp.tasks);
+// });
+
+// gulp.task('test', function() {
+//     util.log(gulp.tasks);
+// })
+
+// gulp.task('watch', function() {
+//     util.log(gulp.tasks.watch.running);
+// })
+
 
 /*
  |--------------------------------------------------------------------------
@@ -43,12 +58,12 @@ elixir(function(mix) {
         ],
             'public/css/all.css',
             'public/css'
-        );
-   //  	.browserSync([
-			// 'app/**/*',
-			// 'public/**/*',
-			// 'resources/views/**/*',
-   //  	], {
-   //  		proxy: 'sicna.app'
-   //  	});
+        )
+    	.browserSync([
+			'app/**/*',
+			'public/**/*',
+			'resources/views/**/*',
+    	], {
+    		proxy: 'sicna.app'
+    	});
 });
