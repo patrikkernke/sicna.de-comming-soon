@@ -26,11 +26,16 @@ elixir(function(mix) {
             'resources/assets/bower_components/jquery/dist/jquery.js',
             'public/js/jquery.js'
         )
+        .copy(
+            'resources/assets/js/coming.js',
+            'public/js/coming.js'
+        )
     	.scripts([
-    		'coming.js'
+    		'jquery.js',
+            'coming.js'
             ],
-    		'public/js/coming.js',
-            'resources/assets/js' 
+    		'public/js/all.js',
+            'public/js'
     	)
     	.sass('main.scss')
         .styles([
@@ -39,12 +44,12 @@ elixir(function(mix) {
         ],
             'public/css/all.css',
             'public/css'
-        )
-    	.browserSync([
-			'app/**/*',
-			'public/**/*',
-			'resources/views/**/*',
-    	], {
-    		proxy: 'sicna.app'
-    	});
+        );
+   //  	.browserSync([
+			// 'app/**/*',
+			// 'public/**/*',
+			// 'resources/views/**/*',
+   //  	], {
+   //  		proxy: 'sicna.app'
+   //  	});
 });
