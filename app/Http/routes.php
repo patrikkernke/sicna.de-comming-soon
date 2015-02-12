@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('/impressum', 'PageController@impressum');
 Route::get('/', 'PageController@coming');
 
 // Route::get('home', 'HomeController@index');

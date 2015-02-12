@@ -15,6 +15,15 @@ class PageController extends Controller {
 	{
 		return view('pages.coming');
 	}
+
+	/**
+	 * Show impressum page to visitor
+	 * @return Response
+	 */
+	public function impressum()
+	{
+		return view('pages.coming-impressum');
+	}
 	
 
 }
