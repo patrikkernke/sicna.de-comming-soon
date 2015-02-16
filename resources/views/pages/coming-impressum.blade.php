@@ -11,6 +11,8 @@
 		<li>56220 Urmitz</li>
 		<li>www.sicna.de</li>
 		<li>info@sicna.de</li>
+		<li>Ust-IdNr. DE 149 458 400</li>
+		<li>St.-Nr. 22/135/3029/3</li>
 	</ul>
 
 	<a href="/" class="btn btn-default">
