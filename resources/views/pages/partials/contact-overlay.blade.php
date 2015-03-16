@@ -22,7 +22,7 @@
 			<div class="col-md-4 col-sm-4 col-xs-12 text-center">
 				<span class="glyphicon glyphicon-phone"></span>
 				<a href="tel:026184088" class="contact bigger">
-					0261 / 84088
+					02630 / 84088
 				</a>
 			</div>
 			
