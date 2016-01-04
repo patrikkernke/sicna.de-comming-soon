@@ -1,5 +1,5 @@
 var elixir = require('laravel-elixir');
-require('laravel-elixir-browser-sync');
+
 // var gulp = require('gulp');
 // var util = require('gulp-util');
 
@@ -58,12 +58,5 @@ elixir(function(mix) {
         ],
             'public/css/all.css',
             'public/css'
-        )
-    	.browserSync([
-			'app/**/*',
-			'public/**/*',
-			'resources/views/**/*',
-    	], {
-    		proxy: 'sicna.app'
-    	});
+        );
 });
